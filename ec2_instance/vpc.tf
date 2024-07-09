@@ -41,7 +41,7 @@ resource "aws_security_group" "sg_instancia01" {
   egress {
     description = "SSH Traffic"
     from_port   = 0
-    to_port     = 0
+    to_port     = 100
     protocol    = "-1"
     # Debemos sustituir el bloque ALL-ZERO nuestra IP Publica
     cidr_blocks = ["0.0.0.0/0"]
